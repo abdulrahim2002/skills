@@ -1,17 +1,11 @@
----
-name: publish-git-changes
-description: Git workflow for publishing code changes on the mobilityhouse/tmh-ai repository. Use when creating branches, commits, or pull requests in this project.
----
-
 # Publishing Git Changes
 
 ## Critical guardrail — `gh` permission
 
 **Every `gh` command that mutates (create, merge, close, edit, label, assign,
 etc.) MUST be confirmed by the user before running.** This is a hard rule, not
-a guideline. The agent MUST present the exact command, explain what it does, and
-wait for explicit approval. Never run a mutating `gh` command autonomously.
-
+a guideline. The agent MUST present the exact command, explain what it does,
+and wait for explicit approval. Never run a mutating `gh` command autonomously.
 Read-only `gh` commands (`gh pr list`, `gh pr view`, `gh pr status`, `gh pr
 diff`, `gh issue list`, `gh issue view`) are safe to run without confirmation.
 
@@ -28,7 +22,6 @@ git checkout main
 git pull
 git checkout -b <type>/<short-description>
 ```
-
 Pattern: `<type>/<short-description>` (kebab-case). Describe the work in
 plain terms — never use AI/automation terminology (phase numbers, ticket
 numbers, "agent-did", "ai-generated", etc.).
@@ -105,7 +98,7 @@ gh pr create \
 
 ...
 
-Signed-off-by: GitHub Copilot (AI agent)
+Signed-off-by: [agent-name] (AI agent)
 EOF
 )"
 ```
@@ -113,13 +106,11 @@ EOF
 ## Reference
 
 ### Branch rules
-
 - Always cut from `main`, never from another feature branch.
 - Never force-push a branch that has an open PR. Open a new branch instead.
 - Keep branches focused: one feature or fix per branch.
 
 ### PR body sign-off
-
 Every PR body must end with a sign-off identifying the agent:
 
 ```
@@ -129,7 +120,6 @@ Signed-off-by: <agent-name> (AI agent)
 If the agent name is unknown: `Signed-off-by: AI agent (non-human)`.
 
 ### Sequence — branches that gate
-
 When a PR is open and further changes are needed, the next logical commit on
 the same branch is gated by the open PR — do not push to it without user
 direction. Ask first.

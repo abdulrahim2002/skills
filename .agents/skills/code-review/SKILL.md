@@ -1,11 +1,3 @@
----
-name: code-review
-description: Perform senior-engineer code reviews for pull requests, diffs, branches, commits, or local changes at The Mobility House. Use when asked to review code, audit a PR, inspect changed files, check a branch before merge, or provide review comments covering blocking findings, useful non-blocking observations, correctness, security, contracts, conventions, tests, and infrastructure risk.
-metadata:
-  author: mobilityhouse
-  version: "1.0.0"
----
-
 # Code Review
 
 Use this skill to review code like a senior engineer. Lead with issues that should block or materially improve a PR, but also include concise non-blocking observations when they would help the author improve maintainability, operability, testability, or future review quality. Avoid noisy style commentary, and ground every finding or observation in the specific diff and surrounding project conventions.
@@ -155,3 +147,11 @@ For local review responses, use this order:
 4. Brief validation notes.
 
 For Codex app inline findings, use the platform's code-comment directive when available. Non-blocking observations may be plain bullets unless the user asks for inline comments. For GitHub reviews, keep the same content but place each comment on the relevant diff line, and prefix non-blocking comments with "Non-blocking:".
+
+## Supporting Files
+
+Skill directory: /Users/abdul.rahim/personal/skills/.agents/skills/code-review
+
+Relative paths in this skill resolve from the skill directory. The shell tool runs in the session working directory, so use the resolved path below or `cd` into the skill directory before running supporting scripts.
+
+- agents/openai.yaml → /Users/abdul.rahim/personal/skills/.agents/skills/code-review/agents/openai.yaml (load_skill(name: "code-review/agents/openai.yaml"))

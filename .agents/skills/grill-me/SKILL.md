@@ -3,9 +3,7 @@ name: grill-me
 description: Interview the user relentlessly about a plan or design until reaching shared understanding, resolving each branch of the decision tree. Use when user wants to stress-test a plan, get grilled on their design, or mentions "grill me".
 metadata:
   note: |
-    Imported by The Mobility House (TMH) from `mattpocock/skills` via `skills/tmh/external-skill-manager`.
-    This skill is part of TMH's internal skills repository for employee use.
-    See manifest section below for complete import details.
+    Imported from `mattpocock/skills` via skill manager.
   manifest: |
     source:
       skillsUrl: https://skills.sh/mattpocock/skills/grill-me
@@ -15,7 +13,7 @@ metadata:
       repositoryCommitSha: eebfb3c99aa955d4928192fab5de247d36633502
       contentTreeSha: 2a1ad17028306ebe45f0e49703fa28b9b2e7f499
     local:
-      repository: https://github.com/mobilityhouse/skills
+      repository: https://github.com/[your-org]/skills
       path: skills/imported/grill-me
       lastUpdatedAt: 2026-03-30T15:47:05Z
 ---
