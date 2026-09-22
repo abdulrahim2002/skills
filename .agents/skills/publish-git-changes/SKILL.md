@@ -1,6 +1,6 @@
 ---
 name: publish-git-changes
-description: Git workflow for publishing code changes on the mobilityhouse/tmh-ai repository. Use when creating branches, commits, or pull requests in this project.
+description: Git workflow for publishing code changes on a project repository. Use when creating branches, commits, or pull requests in this project.
 ---
 
 # Publishing Git Changes

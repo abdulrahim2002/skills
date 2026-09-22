@@ -1,8 +1,8 @@
 ---
 name: code-review
-description: Perform senior-engineer code reviews for pull requests, diffs, branches, commits, or local changes at The Mobility House. Use when asked to review code, audit a PR, inspect changed files, check a branch before merge, or provide review comments covering blocking findings, useful non-blocking observations, correctness, security, contracts, conventions, tests, and infrastructure risk.
+description: Perform senior-engineer code reviews for pull requests, diffs, branches, commits, or local changes. Use when asked to review code, audit a PR, inspect changed files, check a branch before merge, or provide review comments covering blocking findings, useful non-blocking observations, correctness, security, contracts, conventions, tests, and infrastructure risk.
 metadata:
-  author: mobilityhouse
+  author: skills
   version: "1.0.0"
 ---
 

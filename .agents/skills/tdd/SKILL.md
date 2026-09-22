@@ -3,8 +3,7 @@ name: tdd
 description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
 metadata:
   note: |
-    Imported by The Mobility House (TMH) from `mattpocock/skills` via `skills/tmh/external-skill-manager`.
-    This skill is part of TMH's internal skills repository for employee use.
+    Imported from `mattpocock/skills` via `skills/external-skill-manager`.
     See manifest section below for complete import details.
   manifest: |
     source:
@@ -15,7 +14,7 @@ metadata:
       repositoryCommitSha: 84fdeffd12f2ee307994d1eb6feb48173b6e0502
       contentTreeSha: 423f3cc2bccf3b0ed426fb35eeb4b38d9188a343
     local:
-      repository: https://github.com/mobilityhouse/skills
+      repository: https://github.com/user/skills
       path: skills/imported/tdd
       lastUpdatedAt: 2026-08-07T12:32:39Z
 ---
