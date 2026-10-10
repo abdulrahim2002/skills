@@ -1,0 +1,175 @@
+/* Nord Light Theme for Previm
+ * Based on Nord color palette: https://www.nordtheme.com
+ * Snow Storm: #eceff4 (bg), #e5e9f0 (elevated), #d8dee9 (border)
+ * Polar Night: #2e3440 (text), #3b4252, #434c5e, #4c566a
+ * Frost: #8fbcbb, #88c0d0, #81a1c1, #5e81ac
+ * Aurora: #bf616a, #d08770, #ebcb8b, #a3be8c, #b48ead
+ */
+
+* { box-sizing: border-box; }
+
+html {
+  background: #eceff4;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2e3440;
+  background: #eceff4;
+  margin: 0 auto;
+  padding: 40px 24px;
+  max-width: 900px;
+  min-height: 100vh;
+}
+
+/* ── Headings ── */
+h1, h2, h3, h4, h5, h6 {
+  color: #3b4252;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+h1 { font-size: 2em; border-bottom: 2px solid #d8dee9; padding-bottom: 0.3em; }
+h2 { font-size: 1.5em; border-bottom: 1px solid #d8dee9; padding-bottom: 0.25em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.1em; color: #5e81ac; }
+
+/* ── Links ── */
+a {
+  color: #5e81ac;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+a:hover {
+  color: #81a1c1;
+  border-bottom-color: #81a1c1;
+}
+
+/* ── Inline code ── */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, "Courier New", monospace;
+  background: #e5e9f0;
+  color: #b48ead;
+  border-radius: 4px;
+  padding: 0.2em 0.5em;
+  font-size: 0.9em;
+  border: 1px solid #d8dee9;
+}
+
+/* ── Code blocks ── */
+pre {
+  background: #e5e9f0;
+  border: 1px solid #d8dee9;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: #3b4252;
+}
+
+/* ── Blockquotes ── */
+blockquote {
+  border-left: 4px solid #81a1c1;
+  background: #e5e9f0;
+  color: #4c566a;
+  padding: 12px 20px;
+  margin: 16px 0;
+  border-radius: 0 6px 6px 0;
+}
+blockquote p { margin: 0; }
+
+/* ── Tables ── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #d8dee9;
+}
+th, td {
+  border: 1px solid #d8dee9;
+  padding: 10px 16px;
+  text-align: left;
+}
+th {
+  background: #e5e9f0;
+  color: #5e81ac;
+  font-weight: 600;
+}
+tr:nth-child(even) { background: #f2f4f8; }
+tr:hover { background: #e5e9f0; }
+
+/* ── Horizontal rule ── */
+hr {
+  border: none;
+  border-top: 2px solid #d8dee9;
+  margin: 32px 0;
+}
+
+/* ── Images ── */
+img { max-width: 100%; border-radius: 6px; }
+
+/* ── Lists ── */
+ul, ol { padding-left: 1.8em; margin: 12px 0; }
+li + li { margin-top: 6px; }
+li::marker { color: #81a1c1; }
+
+/* ── Strong & emphasis ── */
+strong { color: #3b4252; font-weight: 700; }
+em { color: #a3be8c; }
+
+/* ── Task lists ── */
+input[type="checkbox"] {
+  accent-color: #a3be8c;
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+/* ── Details / Summary ── */
+details {
+  background: #e5e9f0;
+  border: 1px solid #d8dee9;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 12px 0;
+}
+summary {
+  cursor: pointer;
+  color: #5e81ac;
+  font-weight: 600;
+}
+
+/* ── Selection ── */
+::selection {
+  background: #81a1c1;
+  color: #eceff4;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #eceff4; }
+::-webkit-scrollbar-thumb { background: #d8dee9; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #bec5d2; }
+
+/* ── Previm header ── */
+#header {
+  border-bottom: 1px solid #d8dee9;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  color: #81a1c1;
+  font-size: 0.9em;
+}
